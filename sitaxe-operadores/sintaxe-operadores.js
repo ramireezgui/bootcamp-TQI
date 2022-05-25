@@ -18,14 +18,19 @@ function criaPrimeiraFrase(num1, num2){
 
 function criaSegundaFrase(num1, num2){
     const soma = num1 + num2;
-    let comparaDez = 'maior';
+    let comparaDez = 'menor';
     let comparaVinte = 'menor';
 
     if (soma > 20) {
         comparaVinte = 'maior';
     }
 
+    if (soma > 10) {
+        comparaDez = 'maior'
+    }
+    
+
     return `Sua soma é ${soma}, que é ${comparaDez} do que 10 e ${comparaVinte} do que 20.`;
 }
 
-console.log(comparaNumeros (18, 14));
+console.log(comparaNumeros (15 , 15));
